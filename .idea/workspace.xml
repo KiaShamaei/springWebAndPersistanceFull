@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="webMvcFullWithExceptionHandling:war exploded" />
+      <artifact name="springWebAndPersistanceFull:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,43 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2c0d146-a200-46cf-876b-b7f34837d867" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/config/JpaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/config/WebAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/config/hibernateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/ControllerWithError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/ControllerWithErrorHandling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/GlobalErrorHandling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/MainControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/NormalControllerTestGlobal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/crud/ProductControllerHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/crud/ProductControllerJpa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/crudMvc/ProductControllerHibernateMvc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/dao/ProductDaoHibernateImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/dao/ProductDaoJpaImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/interceptor/MyInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/service/ProductServiceHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/service/ProductServiceJpa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties-hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB_INF/view/addProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB_INF/view/bb.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB_INF/view/counter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB_INF/view/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB_INF/view/error2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB_INF/view/list-products.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB_INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/aop/AopConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/config/AopConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/service/model/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/errors.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webMvc/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/MainControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/MainControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/crud/ProductControllerJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/controller/crud/ProductControllerJpa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webMvc/service/ProductServiceJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webMvc/service/ProductServiceJpa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB_INF/view/bb.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB_INF/view/bb.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,11 +61,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/springClass/webMvcFullWithExceptionHandling/src/main/webapp/WEB_INF/view&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/springClass/springWebAndPersistanceFull&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;b0e614f3dbc4e8be2c5a7760a887a437&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;b38b8c8a19752d80d65abe49befa930a&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -112,17 +86,18 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="oo" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" activateToolWindowBeforeRun="false" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="webMvcFullWithExceptionHandling:war exploded">
+        <artifact name="springWebAndPersistanceFull:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="649e2e00-9ea8-465c-b3b9-3c4930fb5d3b" />
+        <option name="BASE_DIRECTORY_NAME" value="aebb462a-0764-4b89-9f51-adbf228515d8" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -130,7 +105,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="62394" />
+        <option name="DEBUG_PORT" value="63514" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -195,7 +170,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="webMvcFullWithExceptionHandling:war exploded" />
+          <artifact name="springWebAndPersistanceFull:war exploded" />
         </option>
       </method>
     </configuration>
@@ -212,6 +187,12 @@
       <workItem from="1676038976219" duration="10348000" />
       <workItem from="1676110146912" duration="5041000" />
       <workItem from="1676121045932" duration="5762000" />
+      <workItem from="1676719239184" duration="1044000" />
+      <workItem from="1676720410727" duration="71000" />
+      <workItem from="1676731344955" duration="2319000" />
+      <workItem from="1676998789967" duration="900000" />
+      <workItem from="1677139426744" duration="3778000" />
+      <workItem from="1677167535810" duration="2711000" />
     </task>
     <servers />
   </component>
@@ -223,7 +204,20 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

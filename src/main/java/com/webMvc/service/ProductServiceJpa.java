@@ -2,6 +2,7 @@ package com.webMvc.service;
 
 import com.webMvc.dao.ProductDaoJpaImp;
 import com.webMvc.entity.Product;
+import com.webMvc.service.model.ProductDto;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,8 +24,12 @@ public class ProductServiceJpa {
         return productDaoJpaImp.getProduct(id);
     }
     @Transactional
-    public Product editOrSaved(Product p){
-        return productDaoJpaImp.savedProduct(p);
+    public Product editOrSaved(ProductDto p){
+        Product product = new Product();
+        product.setName(p.getName());
+        product.setPrice(p.getPrice());
+        product.setDescription(p.getDescription());
+        return productDaoJpaImp.savedProduct(product);
     }
     @Transactional
     public void delete(Long id){

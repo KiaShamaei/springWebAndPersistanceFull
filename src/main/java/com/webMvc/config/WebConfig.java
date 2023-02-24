@@ -5,6 +5,7 @@ import com.webMvc.interceptor.MyInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter;
@@ -77,18 +78,27 @@ public class WebConfig implements WebMvcConfigurer {
 //        };
 //    }
     //this method work for all error custom response
+//    @Bean
+//    public HandlerExceptionResolver handlerExceptionResolver(){
+//        SimpleMappingExceptionResolver s = new SimpleMappingExceptionResolver();
+//        Properties m = new Properties();
+//        m.put("java.lang.NullPointerException" , "error2");
+//        m.put("java.lang.ArithmeticException" , "error");
+//        s.setExceptionMappings(m);
+//        Properties statusCodes = new Properties();
+//        statusCodes.put("error2" , "500");
+//        statusCodes.put("error" , "404");
+//        s.setStatusCodes(statusCodes);
+//        return s;
+//    }
+    //this is for add bundle of messages
     @Bean
-    public HandlerExceptionResolver handlerExceptionResolver(){
-        SimpleMappingExceptionResolver s = new SimpleMappingExceptionResolver();
-        Properties m = new Properties();
-        m.put("java.lang.NullPointerException" , "error2");
-        m.put("java.lang.ArithmeticException" , "error");
-        s.setExceptionMappings(m);
-        Properties statusCodes = new Properties();
-        statusCodes.put("error2" , "500");
-        statusCodes.put("error" , "404");
-        s.setStatusCodes(statusCodes);
-        return s;
+    public ResourceBundleMessageSource resourceBundleMessageSource(){
+        ResourceBundleMessageSource r = new ResourceBundleMessageSource();
+        r.setBasename("errors");
+        r.setDefaultEncoding("UTF-8");
+        r.setUseCodeAsDefaultMessage(true);
+        return r;
     }
 
 }
